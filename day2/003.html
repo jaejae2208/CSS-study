@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폰트 적용하기</title>
+    <!-- 1. link 태그 방식 -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    /> -->
+    <style>
+      /* 2. @import 방식 */
+      /* @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+      body {
+        font-family: "Do Hyeon", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      } */
+      /* 3. @font-face 방식으로 적용하기 */
+      /* @font-face {
+        font-family: "TheJamsil5Bold";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2")
+          format("woff2");
+        font-weight: 700;
+        font-style: normal;
+      }
+      body {
+        font-family: "TheJamsil5Bold";
+        font-weight: 700;
+        font-style: normal;
+      } */
+      @font-face {
+        font-family: "The Jamsil 4 Medium";
+        src: url("font/The\ Jamsil\ 4\ Medium.ttf") format("ttf");
+        font-weight: 700;
+        font-style: normal;
+      }
+      body {
+        font-family: "The Jamsil 4 Medium";
+        font-weight: 700;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>dkanrjt</h1>
+    <h2>fjklsajlkfls</h2>
+    <p>폰트 적용하기</p>
+  </body>
+</html>

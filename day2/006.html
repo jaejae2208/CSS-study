@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      section {
+        color: red;
+        border: 5px solid pink;
+        font-weight: 100;
+        padding: 20px;
+      }
+
+      div {
+        border: 5px solid skyblue;
+        color: blue;
+        font-weight: 900;
+        padding: 20px;
+        /* 부모와 동일하게 상속 */
+        /* color: inherit; */
+        /* inherit처럼 작동 */
+        /* font-weight: unset; */
+        /* initial처럼 작동 */
+        /* padding: unset; */
+      }
+      section {
+        color: red;
+        border: 5px solid pink;
+        font-weight: 100;
+        padding: 20px;
+      }
+
+      div {
+        border: 5px solid skyblue;
+        color: blue;
+        font-weight: 900;
+        padding: 20px;
+        /* 부모와 동일하게 상속 */
+        color: inherit;
+        border: inherit;
+        /* color: inherit; */
+        /* inherit처럼 작동 */
+        /* font-weight: unset; */
+        /* initial처럼 작동 */
+        /* padding: unset; */
+      }
+    </style>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      부모
+      <div>자식 1</div>
+      <div>자식 2</div>
+    </section>
+  </body>
+</html>
