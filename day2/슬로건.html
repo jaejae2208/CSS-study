@@ -12,23 +12,51 @@
         font-weight: 700;
         font-style: normal;
       }
-      p {
-        color: cornflowerblue;
+
+      .container {
+        position: relative;
+        display: inline-block;
+      }
+
+      img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        display: block;
+        border-radius: 15px; /* 이미지 라운딩 */
+      }
+
+      .slogan {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        color: blueviolet; /* 예쁜 파스텔 연두색 */
         font-family: "TheJamsil5Bold";
         font-weight: 700;
-        font-style: normal;
-        font-size: 7vmax;
-        text-decoration-style: dotted;
+        font-size: 2.5vmax;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 5px 10px;
+        border-radius: 10px;
+
+        /* ✅ 물결 밑줄 */
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: blue;
       }
-      .container {
-        text-align: center;
+
+      .slogan::after {
+        content: "💪";
+        margin-left: 5px;
+
+        /* ❌ 밑줄 제거 */
+        text-decoration: none;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <img src="화이팅.png" alt="화이팅" />
-      <p>힘들어도 오늘 화이팅</p>
+      <p class="slogan">응 난 할 수 있어</p>
     </div>
   </body>
 </html>

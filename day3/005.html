@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>border-radius</title>
+    <style>
+      /* .box {
+        width: 100px;
+        height: 100px;
+        background-color: #8d4bf6;
+        /* border-radius: 10px;
+      }
+      .box1 {
+        border-radius: 50%;
+      }
+      .box2 {
+        border-radius: 10px;
+      }
+      .box3 {
+        border-radius: 100% 0 0 0;
+      }
+      .box4 {
+        border-radius: 100% 0 100% 0;
+      }
+      .box5 {
+        border-radius: 0 50% 0 50%;
+      }
+      .box6 {
+        height: 50px;
+        border-radius: 50px 50px 0 0;
+      } */
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #333;
+        padding: 10px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+      }
+
+      .box {
+        background-image: url("https://picsum.photos/50");
+      }
+
+      .repeat {
+        background-repeat: repeat;
+      }
+
+      .repeat-x {
+        background-repeat: repeat-x;
+      }
+
+      .repeat-y {
+        background-repeat: repeat-y;
+      }
+
+      .no-repeat {
+        background-repeat: no-repeat;
+      }
+
+      .space {
+        background-repeat: space;
+      }
+
+      .round {
+        background-repeat: round;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div> -->
+    <!-- img와 Background -->
+    <!-- 1. img : 꼭 이미지가 불러와져야 하고, 대체 텍스트가 있어야 할 때, 로딩 조절, picture 사용해서 다르게 로딩 -->
+    <div class="container">
+      <div class="box repeat">repeat</div>
+      <div class="box repeat-x">repeat-x</div>
+      <div class="box repeat-y">repeat-y</div>
+      <div class="box no-repeat">no-repeat</div>
+      <div class="box space">space</div>
+      <div class="box round">round</div>
+    </div>
+  </body>
+</html>

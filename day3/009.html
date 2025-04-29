@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이미지 비율 유지</title>
+    <style>
+      .box {
+        width: 300px;
+        background-color: pink;
+        aspect-ratio: 16/9;
+      }
+      img {
+        width: 300px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="img/weniv-licat.png" alt="위니브 라이켓" />
+  </body>
+</html>

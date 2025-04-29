@@ -1,0 +1,363 @@
+/* Frame 6 */
+.frame6 {
+  position: relative;
+  width: 740px;
+  height: 447px;
+
+  background: #f5f5f5;
+  margin: 50px;
+}
+
+.Post-Card {
+  /* #Post-Card */
+
+  position: absolute;
+  width: 288px;
+  height: 348px;
+  left: 63px;
+  top: 46px;
+
+  background: #ffffff;
+  /* 00 */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.cardimg {
+  /* unsplash:lB9ylP8e9Sg */
+
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 152px;
+
+  background: url(../img/cardimg.png);
+  background-repeat: no-repeat;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.position1 {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 56px;
+}
+
+.frame3 {
+  /* Frame 3 */
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.frame3 > p {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.5px;
+  line-height: 160%;
+  /* or 19px */
+
+  /* text2 */
+  color: #5a6a72;
+}
+
+button {
+  /* button */
+  position: absolute;
+  width: 70px;
+  height: 24px;
+  left: 16px;
+  bottom: 16px;
+}
+
+.text-read {
+  position: absolute;
+  height: 18px;
+  left: 6px;
+  right: 30px;
+  top: calc(50% - 18px / 2);
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+}
+
+.group9 {
+  position: absolute;
+  width: 200px;
+  height: 19px;
+  left: 16px;
+  top: 217px;
+}
+
+.group9 > p {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  /* or 100% */
+
+  /* text1 */
+  color: #29363d;
+}
+
+/* Post-Card2 */
+.Post-Card2 {
+  position: absolute;
+  width: 288px;
+  height: 374px;
+  left: 378px;
+  top: 46px;
+
+  background: #ffffff;
+  /* 00 */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.frame5 {
+  /* Frame 5 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  position: absolute;
+  width: 256px;
+  height: 40px;
+  left: 16px;
+  top: 16px;
+
+  /* border: 1px solid#29363d; */
+}
+
+.profileImg {
+  /* Image */
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 100px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.group5 {
+  /* Group 5 */
+
+  width: 200px;
+  height: 34px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.frame4 {
+  /* Frame 4 */
+
+  position: absolute;
+  height: 19px;
+  left: 56px;
+  right: 0px;
+  top: 3px;
+  /* border: 1px solid#29363d; */
+}
+
+.frame4 > p {
+  /* 그것을 피가 청춘을 것이다 */
+
+  position: absolute;
+  height: 19px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* text1 */
+  color: #29363d;
+}
+
+.frame4 + p {
+  /* secondary */
+
+  position: absolute;
+  height: 14px;
+  left: 56px;
+  right: 0px;
+  top: 23px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  /* text2 */
+  color: #5a6a72;
+}
+
+.cardimg2 {
+  /* Image */
+
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 68px;
+  bottom: 68px;
+
+  /* unsplash:lB9ylP8e9Sg */
+
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 68px;
+  bottom: 110px;
+
+  background: url(../img/cardimg.png);
+}
+
+.group17 {
+  /* Group 17 */
+
+  position: absolute;
+  width: 256px;
+  height: 84px;
+  left: 16px;
+  top: 274px;
+  /* border: 1px solid green; */
+}
+
+.position2 {
+  position: relative;
+  left: 0px;
+  right: 16px;
+  /* bottom: 60px; */
+}
+
+.group6 {
+  /* Group 6 */
+
+  position: absolute;
+  width: 256px;
+  height: 32px;
+  left: 16px;
+  top: 326px;
+  /* border: #29363d 1px solid; */
+}
+
+.btn-position {
+  /* button */
+
+  position: absolute;
+  left: 0px;
+  bottom: 4px;
+}
+
+.vector7 {
+  /* Vector 7 */
+
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 0px;
+  top: calc(50% - 6px / 2);
+
+  /* text1 */
+  background: url(../img/Vector\ 7.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.group7 {
+  /* Group 7 */
+
+  position: absolute;
+  width: 112px;
+  height: 32px;
+  right: 0px;
+}
+.frame2 {
+  /* Frame 2 */
+
+  /* border: #29363d 1px solid; */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 112px;
+  height: 32px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.component1 {
+  /* Component 1 */
+
+  width: 32px;
+  height: 32px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Component 1 */
+  /* border: #29363d 1px solid; */
+  display: inline-block;
+  background: url(../img/icon-heart.png);
+}
+.component2 {
+  /* Component 1 */
+
+  width: 32px;
+  height: 32px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Component 1 */
+  /* border: #29363d 1px solid; */
+  display: inline-block;
+  background: url(../img/icon-share.png);
+}
+.component3 {
+  /* Component 1 */
+
+  width: 32px;
+  height: 32px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Component 1 */
+  /* border: #29363d 1px solid; */
+  display: inline-block;
+  background: url(../img/icon-more.png);
+}
