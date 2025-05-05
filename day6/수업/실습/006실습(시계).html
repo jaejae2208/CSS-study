@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../../../day5/정글 시네마 과제/css/reset.css"
+    />
+    <style>
+      @keyframes watch {
+        100% {
+          /* transform: rotate(1turn); */
+        }
+      }
+
+      .container {
+        width: 400px;
+        height: 400px;
+        background-color: cornflowerblue;
+        border-radius: 100px;
+      }
+
+      .hour::after {
+        content: "";
+        height: 150px;
+        border: 5px solid black;
+
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        transform: rotate(180deg);
+        transform-origin: 0% 0%;
+      }
+
+      .min::after {
+        content: "";
+        height: 150px;
+        border: 5px solid green;
+
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        transform: rotate(90deg);
+        transform-origin: 0% 0%;
+      }
+
+      .sec::after {
+        content: "";
+        height: 150px;
+        border: 5px solid red;
+
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        transform: rotate(75deg);
+        transform-origin: 0% 0%;
+
+        /* animation-name: watch;
+        animation-duration: 60s;
+        animation-timing-function: steps(60);
+        animation-iteration-count: infinite; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sec"></div>
+      <div class="min"></div>
+      <div class="hour"></div>
+    </div>
+  </body>
+</html>
