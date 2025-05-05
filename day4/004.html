@@ -20,7 +20,7 @@
         /* justify-content: flex-start; */
         /* justify-content: flex-end; */
 
-        /* 문서의 쓰기 방향 */
+        /* start, end 문서의 쓰기 방향 기준 */
         /* justify-content: start; */
         /* justify-content: end; */
         /* justify-content: center; */
@@ -34,10 +34,12 @@
 
         /* 교차축 기준으로 하는 정렬 */
         /* 기본값 stretch */
-        /* align-items: stretch;
-        align-items: flex-start;
-        align-items: flex-end; 
-        align-items: center;*/
+        /* item요소 자체에 높이값이 없을 경우 stretch는 container 높이 값 만큼 해당 요소가 늘어남 */
+        /* align-items: stretch; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+        /* align-items: baseline; */
       }
       .item {
         width: 100px;
