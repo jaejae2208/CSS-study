@@ -1,0 +1,349 @@
+body {
+  /* 파이널 코딩테스트_1번 */
+  width: 1940px;
+  height: 1683px;
+
+  background: #ffffff;
+}
+
+/* 공통 */
+
+/* container = header + main */
+.container {
+  margin: 165px 430px 348px;
+
+  /* Gray 4 */
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+
+.container > main {
+  /* 영화 목록 */
+  /* 중간배경 */
+  margin: 28px 28px 31px 29px;
+  /* Gray 4 */
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.container > main > .card-grid {
+  margin: 26px 27px 23px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 24px 23px;
+}
+
+header {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > h1 {
+  padding-top: 41px;
+  justify-items: center;
+
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+header > h1::after {
+  /* Vector 1 */
+  justify-items: center;
+  margin-top: 37px;
+
+  content: "";
+  display: block;
+  width: 650px;
+
+  /* Gray 4 */
+  border: 2px solid #bdbdbd;
+}
+
+header > nav {
+  /* 탭 메뉴 */
+  width: 372px;
+  margin-top: 28px;
+}
+
+header > nav > ul {
+  /* padding: 0px; */
+  /* gap: 60px; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header > nav > ul > li > button > h2 {
+  /* 현재상영영화 */
+  width: 89px;
+  height: 19px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  color: #828282;
+  text-align: center;
+}
+
+header > nav > ul > li:first-child > button > h2 {
+  color: #000000;
+  font-weight: 900;
+}
+
+article {
+  border: 1px solid #bdbdbd;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.poster {
+  margin-top: 19px;
+  width: 180px;
+  border: 1px solid #bdbdbd;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  align-self: center;
+}
+
+.item > h3 {
+  margin-top: 11px;
+  font-family: Noto Sans KR;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-left: 20px;
+}
+
+.movie-content {
+  margin-top: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.movie-content > ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-auto-flow: column; */
+  /* align-items: center; */
+  gap: 5px;
+}
+
+/* title1: 1행 1열 */
+.movie-content > ul > li.title1 {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: start;
+}
+
+/* title2: 1행 2열 */
+.movie-content > ul > li.title2 {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: end;
+}
+
+/* title3: 2행 전체 병합 */
+.movie-content > ul > li.title3 {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  justify-self: start;
+}
+
+/* title4: 3행 전체 병합 */
+.movie-content > ul > li.title4 {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  justify-self: start;
+}
+
+.movie-content > ul > li > span {
+  font-family: Noto Sans KR;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #828282;
+}
+.movie-content > ul > li > span:last-child {
+  color: #000000;
+}
+
+.movie-content > ul > li:nth-child(2) > span:last-child::before {
+  content: "★";
+  color: #eb5757;
+  width: 14px;
+  height: 14px;
+  padding-right: 4px;
+}
+
+.rectangle4 {
+  margin-top: 18px;
+  width: 100%;
+  height: 41px;
+
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid #bdbdbd;
+  background-color: #f2f2f2;
+
+  display: grid;
+  grid-template-columns: repeat(2, 110px);
+  /* row-gap: 1px; */
+  /* background: #bdbdbd; 선 색상 */
+  justify-items: center;
+  align-items: center;
+}
+
+.rectangle4 button {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.rectangle4 > a {
+  position: relative; /* 구분선 기준 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.rectangle4 > a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 100%; /* 선 길이 조정 */
+  background: #bdbdbd;
+  z-index: 2;
+  display: block;
+  border-radius: 1px;
+}
+
+.rectangle4 > a,
+span {
+  font-family: Noto Sans KR;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* footer */
+footer {
+  /* Footer */
+
+  position: absolute;
+  width: 1920px;
+  height: 213px;
+  left: 0px;
+  top: 1470px;
+
+  background: #f2f2f2;
+}
+
+footer > h2 {
+  /* Jungle Cinema */
+
+  position: absolute;
+  width: 217px;
+  height: 24px;
+  left: 366px;
+  top: 53px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+footer > ul {
+  display: flex;
+  /* justify-content: space-evenly; */
+  gap: 21px;
+  margin-top: 54px;
+  margin-left: 1440px;
+}
+
+footer > span::after {
+  justify-items: center;
+  margin-top: 37px;
+  margin-left: 366px;
+
+  content: "";
+  display: block;
+  width: 1189px;
+
+  /* Gray 4 */
+  border: 1px solid #c4c4c4;
+}
+
+address {
+  margin-top: 36px;
+  margin-left: 365px;
+}
+address > dl {
+  display: flex;
+  gap: 7px;
+}
+
+address > dl > dt {
+  font-family: Noto Sans KR;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+address > dl > dd {
+  font-family: Noto Sans KR;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+footer > p {
+  /* ⓒ The Jungle */
+
+  position: absolute;
+  width: 93px;
+  height: 20px;
+  left: 1462px;
+  top: 145px;
+
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  /* Gray 2 */
+  color: #4f4f4f;
+}
