@@ -1,0 +1,457 @@
+/* 브라우저 바디 */
+body {
+  position: absolute;
+  background: #eae8fe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 헤더 + 로고 */
+header {
+  width: 100vw;
+  height: 204px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+header > img {
+  width: 386px;
+  height: 180px;
+  margin-top: 0;
+}
+
+/* 메인 */
+main {
+  width: 748px;
+  height: 545px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* 그룹1 */
+.group1 {
+  width: 360px;
+  height: 545px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choice {
+  margin-top: 31px;
+  margin-bottom: 20px;
+  /* border: 5px solid black; */
+  width: 306px;
+  height: 272px;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.card {
+  position: relative;
+  width: 94px;
+  height: 130px;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.on {
+  border: 3px solid #6327fe;
+  border-radius: 10px;
+}
+.card.soldout {
+  position: relative;
+  /* 배경색, opacity 제거 */
+}
+
+/* 검정 반투명 오버레이 */
+.card.soldout .soldout-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* 투명도 조절 */
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* 품절 배지(이미지 또는 텍스트) - 카드 중앙 */
+.card.soldout .soldout-badge {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60px; /* 이미지 크기 조절 */
+  height: auto;
+  pointer-events: none;
+}
+
+.card > img {
+  width: 36px;
+  height: 65px;
+  margin-top: 11px;
+}
+
+.card > p {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  color: #333333;
+  margin-top: 6px;
+}
+
+.card > button {
+  width: 70px;
+  height: 22px;
+
+  background: #6327fe;
+  border-radius: 50px;
+  margin-top: 7%;
+
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+/* 잔액 */
+.balance,
+.deposit,
+.gain {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.won {
+  width: 200px;
+  height: 33px;
+  background-color: #eae8fe;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.balance > button,
+.deposit > button {
+  width: 94px;
+  height: 32px;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.won > p {
+  height: 20px;
+
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #000000;
+}
+
+.deposit > input {
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  width: 200px;
+  height: 32px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+
+/* 흭득 */
+.list2 {
+  box-sizing: border-box;
+  width: 200px;
+  height: 106px;
+
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  background-color: #eae8fe;
+
+  display: flex;
+}
+
+.list2 > ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-left: 12px;
+  gap: 6px;
+}
+
+.list2 > ul > li {
+  width: 170px;
+  height: 46px;
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+
+  border-radius: 5px;
+}
+
+.list2 > ul > li > img {
+  width: 18px;
+  height: 33px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.list2 > ul > li > p {
+  width: 73px;
+  height: 10px;
+
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  color: #333333;
+
+  margin-left: 10px;
+}
+
+.list2 > ul > li > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Noto Sans KR;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  text-align: right;
+  margin-right: 8px;
+
+  margin-left: 21px;
+}
+
+.gain > button {
+  width: 94px;
+  height: 106px;
+
+  background: #6327fe;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+/* 그룹2 */
+.group2 {
+  width: 360px;
+  height: 545px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 20px;
+}
+
+/* 소지금 */
+.cash {
+  width: 360px;
+  height: 50px;
+  align-self: center;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cash-content {
+  display: flex;
+  align-items: center;
+  gap: 152px;
+  width: 306px;
+  height: 32px;
+  background-color: #eae8fe;
+  border-radius: 5px;
+}
+
+.cash-content > span:first-child {
+  width: 47px;
+  height: 20px;
+
+  font-family: Noto Sans KR;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-left: 10px;
+}
+.cash-content > span:last-child {
+  width: 87px;
+  height: 20px;
+
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: #000000;
+}
+
+.stuff {
+  width: 360px;
+  height: 474px;
+  background-color: #ffffff;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stuff > p {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.list {
+  margin-top: 13px;
+  box-sizing: border-box;
+  width: 306px;
+  height: 364px;
+
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  background-color: #eae8fe;
+
+  display: flex;
+}
+
+.list > ul {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  gap: 6px;
+}
+
+.list > ul > li {
+  width: 276px;
+  height: 46px;
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+
+  border-radius: 5px;
+}
+
+.list > ul > li > img {
+  width: 18px;
+  height: 33px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.list > ul > li > p {
+  width: 73px;
+  height: 10px;
+
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  color: #333333;
+
+  margin-left: 10px;
+}
+
+.list > ul > li > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Noto Sans KR;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  text-align: right;
+  margin-right: 8px;
+
+  margin-left: 127px;
+}
+
+.sum {
+  align-self: flex-end;
+  margin-right: 27px;
+}
+
+.position1 {
+  margin-top: 25px;
+}
+
+.position2 {
+  margin-top: 6px;
+}
+
+.Rectangle {
+  width: 4px;
+  height: 79px;
+  background: #ffffff;
+  border-radius: 50px;
+  margin-top: 9px;
+  margin-left: 10px;
+}

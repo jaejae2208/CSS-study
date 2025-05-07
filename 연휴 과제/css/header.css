@@ -1,0 +1,77 @@
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* header */
+header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* logo */
+h1 {
+  width: 117px;
+  height: 34px;
+}
+
+/* 네비게이션 메뉴 */
+nav {
+  width: 644px;
+  height: 19px;
+  margin-left: 192px;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 81px;
+}
+
+nav > ul > a > li {
+  font-family: Pretendard;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+/* 로그인 / 회원가입 */
+.right {
+  margin-left: 111px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.right > button {
+  background: #eeeeee;
+  border-radius: 20px;
+  padding: 6px 14px;
+
+  font-family: Pretendard;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.right > button:hover {
+  /* 로그인 */
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+
+  /* success */
+  color: #2e6ff2;
+}

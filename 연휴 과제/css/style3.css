@@ -1,0 +1,441 @@
+main {
+  width: 1224px;
+  align-self: center;
+  position: relative; /* 기준 위치 설정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  position: absolute;
+  bottom: -30px; /* 하단에서 20px */
+  right: -30px; /* 우측에서 20px */
+  z-index: 100;
+  padding: 10px 15px;
+  width: 60px;
+  height: 60px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.top > p {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #262b3f;
+  margin-top: 1.24px;
+  justify-self: center;
+}
+
+h2 {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 160%;
+  color: #29363d;
+  margin-top: 80px;
+}
+
+form {
+  margin-top: 40px;
+  width: 392px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.register-img-area {
+  align-self: center;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-img {
+  background-color: #f4f5f5;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.register-img-area > button {
+  position: absolute;
+  border: none;
+  bottom: 0; /* 원하는 위치 조정 */
+  right: 0;
+  z-index: 200;
+}
+
+.register-img-area > button > img {
+  width: 40px; /* 아이콘 크기 조절 */
+  height: 40px;
+  display: block; /* 불필요한 여백 제거 */
+}
+
+.user-name {
+  margin-top: 40px;
+}
+.user-Email,
+.pw,
+.pw-confirm,
+.tel,
+.github-url,
+.birth,
+.gender,
+.address,
+.aboutme {
+  margin-top: 24px;
+}
+
+h3 {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+  display: flex;
+  align-items: center;
+
+  /* Neutral/N300 */
+  color: #788991;
+
+  margin-bottom: 4px;
+}
+
+form > div > input,
+.tel-group > input {
+  /* Neutral/N20 */
+  background: #f4f5f5;
+  border-radius: 5px 5px 0px 0px;
+
+  width: 392px;
+  height: 48px;
+
+  border: none;
+
+  border-bottom: 1px solid #a0acb1;
+}
+
+.tel-group {
+  display: flex;
+  gap: 8px;
+}
+
+.tel-group > button {
+  width: 99px;
+  height: 48px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2e6ff2;
+  flex: none;
+
+  width: 99px;
+  height: 48px;
+
+  background: #ffffff;
+  border: 1px solid #2e6ff2;
+  border-radius: 5px;
+}
+
+input[type="date"] {
+  box-sizing: border-box;
+
+  border: 1px solid #a0acb1;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* 1. 기본 아이콘 숨기기 (Webkit 계열) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* 2. input에 커스텀 아이콘 background로 추가 */
+input[type="date"].custom-date {
+  position: relative;
+  padding-right: 40px; /* 아이콘 공간 확보 */
+  background: url("../구현실습_페이지/img/icon-calendar.png") no-repeat right
+    12px center/24px 24px;
+
+  font-family: "Pretendard", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #788991;
+  border: 1px solid #a0acb1;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+/* 3. appearance 제거로 브라우저 기본 스타일 최소화 */
+input[type="date"].custom-date {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.gender fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 16px;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.gender-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  height: 24px;
+  min-width: 56px;
+  cursor: pointer;
+}
+
+/* 기본 라디오 숨기기 */
+.gender-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* 커스텀 라디오 원 */
+.gender-option .custom-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #788991;
+  border-radius: 50%;
+  background: #fff;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  transition: border-color 0.2s;
+}
+
+/* 선택된 상태 */
+.gender-option input[type="radio"]:checked + .custom-radio {
+  border-color: #5be1dd;
+  background: #5be1dd;
+}
+
+/* 선택된 상태의 내부 점 */
+.gender-option input[type="radio"]:checked + .custom-radio::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* 라벨 텍스트 */
+.gender-option .gender-label {
+  font-family: "Pretendard", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140.62%;
+  color: #29363d;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+/* 여성 라벨만 볼드 */
+#female:checked ~ .gender-label,
+.gender-option input#female + .custom-radio + .gender-label {
+  font-weight: 700;
+}
+
+/* 제공하지 않음 라벨 넓이 조정 */
+.gender-option:last-child .gender-label {
+  min-width: 80px;
+}
+
+/* 지역선택 */
+.address > select {
+  width: 392px;
+  height: 48px;
+  border: 1px solid #a0acb1;
+  border-radius: 5px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff url("../구현실습_페이지/img/Trailing\ icon.png") no-repeat
+    right 12px center/24px 24px;
+  padding-right: 40px; /* 아이콘 공간 확보 */
+  /* 아래 속성은 필요에 따라 추가 */
+  border: 1px solid #a0acb1;
+  border-radius: 5px;
+  height: 48px;
+  font-size: 14px;
+
+  /* Placeholder text */
+
+  width: 85px;
+  height: 24px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  display: flex;
+  align-items: center;
+
+  /* Neutral/N300 */
+  color: #788991;
+  padding-left: 12px;
+}
+
+/* 자기소개 */
+textarea {
+  resize: none;
+  width: 392px;
+  height: 160px;
+  box-sizing: border-box;
+  /* 필요시 폰트, 패딩 등 추가 */
+  font-family: "Pretendard", sans-serif;
+  padding: 12px;
+  border: 1px solid #a0acb1;
+  border-radius: 5px;
+}
+
+.chk {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 이용약관 */
+.terms {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.terms > input {
+  box-sizing: border-box;
+
+  width: 18px;
+  height: 18px;
+
+  /* Neutral/N300 */
+  border: 2px solid #788991;
+  border-radius: 3px;
+
+  margin-left: 3px;
+  margin-right: 8px;
+}
+
+.terms > label {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140.62%;
+
+  color: #29363d;
+  align-self: flex-start;
+}
+
+.terms > a {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140.62%;
+  /* identical to box height, or 22px */
+  text-align: right;
+  text-decoration-line: underline;
+
+  /* text2 */
+  color: #5a6a72;
+
+  margin-right: 0;
+}
+
+.btn-group {
+  margin-top: 40px;
+  margin-bottom: 188px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-group > button:not(:last-child) {
+  width: 48px;
+  height: 48px;
+
+  box-sizing: border-box;
+
+  background: #f9f9f9;
+  border: 1px solid #f5f5f5;
+  border-radius: 4px;
+}
+
+.btn-group > button:last-child {
+  width: 286px;
+  height: 48px;
+
+  /* success */
+  background: #2e6ff2;
+  border-radius: 5px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style3.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <title>회원가입</title>
+  </head>
+  <body>
+    <header>
+      <!-- 로고 -->
+      <h1>
+        <a href="#"
+          ><img
+            src="../구현실습_페이지/img/Logo.svg"
+            alt="위니브 로고"
+            class="weniv-logo"
+        /></a>
+      </h1>
+      <nav>
+        <!-- 네비게이션 메뉴 -->
+        <ul>
+          <a href=""><li>About</li></a>
+          <a href=""><li>Character</li></a>
+          <a href=""><li>Curriculum</li></a>
+          <a href=""><li>Recruitment</li></a>
+          <a href=""><li>Store</li></a>
+        </ul>
+      </nav>
+      <div class="right">
+        <!-- 로그인/회원가입 -->
+        <button>로그인</button>
+        <button>회원가입</button>
+      </div>
+    </header>
+    <!-- 메인페이지 -->
+    <main>
+      <h2>회원가입</h2>
+      <form action="#">
+        <div class="register-img-area">
+          <div class="profile-img"></div>
+          <button>
+            <img
+              src="img/register-img-icon.png"
+              alt="프로필 이미지 선택 아이콘"
+            />
+          </button>
+        </div>
+        <div class="user-name">
+          <h3>이름</h3>
+          <input type="text" />
+        </div>
+        <div class="user-Email">
+          <h3>이메일</h3>
+          <input type="email" />
+        </div>
+        <div class="pw">
+          <h3>비밀번호</h3>
+          <input type="password" />
+        </div>
+        <div class="pw-confirm">
+          <h3>비밀번호 재확인</h3>
+          <input type="password" />
+        </div>
+        <div class="tel">
+          <h3>전화번호</h3>
+          <div class="tel-group">
+            <input type="tel" />
+            <button>인증번호 받기</button>
+          </div>
+        </div>
+        <div class="github-url">
+          <h3>GitHub URL</h3>
+          <input type="url" />
+        </div>
+        <div class="birth">
+          <h3>생년월일</h3>
+          <input type="date" class="custom-date" />
+        </div>
+        <div class="gender">
+          <h3>성별</h3>
+          <fieldset>
+            <legend class="sr-only">성별 선택</legend>
+            <label class="gender-option">
+              <input type="radio" name="gender" id="male" />
+              <span class="custom-radio"></span>
+              <span class="gender-label">남성</span>
+            </label>
+            <label class="gender-option">
+              <input type="radio" name="gender" id="female" />
+              <span class="custom-radio"></span>
+              <span class="gender-label">여성</span>
+            </label>
+            <label class="gender-option">
+              <input type="radio" name="gender" id="none" />
+              <span class="custom-radio"></span>
+              <span class="gender-label">제공하지 않음</span>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="address">
+          <h3>지역선택</h3>
+          <select name="options" required>
+            <option value="0"></option>
+            <option value="1">서울</option>
+            <option value="2">제주특별자치도</option>
+          </select>
+        </div>
+        <div class="aboutme">
+          <h3>자기소개</h3>
+          <textarea
+            minlength="10"
+            maxlength="100"
+            placeholder="간단한 자기소개를 써주세요"
+          ></textarea>
+        </div>
+        <div class="chk">
+          <div class="terms">
+            <span class="terms-label">
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms">이용약관 동의(필수)</label>
+            </span>
+            <a href="#">약관보기</a>
+          </div>
+          <div class="terms">
+            <span class="terms-label">
+              <input type="checkbox" name="privacy" id="privacy" />
+              <label for="privacy">개인정보 수집 및 이용 동의(필수)</label>
+            </span>
+            <a href="#">약관보기</a>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button><img src="img/back-icon.png" alt="뒤로가기 버튼" /></button>
+          <button>
+            <img src="img/refresh-icon.png" alt="새로고침 버튼" />
+          </button>
+          <button type="submit">회원가입</button>
+        </div>
+      </form>
+      <div class="top">
+        <img src="img/arrow_top.png" alt="" />
+        <p>TOP</p>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer-content-position">
+        <address>
+          <dl>
+            <dt>회사명&nbsp;:&nbsp;</dt>
+            <dd>위니브</dd>
+            <dt>대표&nbsp;:&nbsp;</dt>
+            <dd>라이캣</dd>
+            <dt>주소&nbsp;:&nbsp;</dt>
+            <dd>제주특별자치도 제주시</dd>
+            <dt>Email&nbsp;:&nbsp;</dt>
+            <dd>abcd123@google.co.kr</dd>
+            <dt>Tel&nbsp;:&nbsp;</dt>
+            <dd>064-000-0000</dd>
+            <dt>Fax&nbsp;:&nbsp;</dt>
+            <dd>064-000-0000</dd>
+          </dl>
+        </address>
+        <p>Copyright © WENIV. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
