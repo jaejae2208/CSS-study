@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형 웹 과제(구현 실습_미디어 쿼리)</title>
+    <link rel="stylesheet" href="../연휴 과제/css/reset.css" />
+    <style>
+      .container {
+        width: 1200px;
+        height: 580px;
+
+        display: grid;
+        grid-template-columns: 1fr 486px;
+        grid-template-rows: repeat(2, calc(580px / 2));
+        margin: 240px 360px 260px;
+      }
+
+      .a {
+        grid-area: 1 / 1 / 3 / 2;
+      }
+
+      .b {
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .c {
+        display: flex;
+        flex-direction: column;
+        grid-area: 2 / 2 / 3 / 3;
+      }
+
+      h1 {
+        font-family: "Spoqa Han Sans Neo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 88px;
+        color: #121314;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-family: "Spoqa Han Sans Neo";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #47494d;
+      }
+
+      h3 {
+        width: 243px;
+        height: 38px;
+
+        font-family: "Spoqa Han Sans Neo";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 38px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+
+        z-index: 300;
+      }
+
+      p {
+        width: 83px;
+        height: 20px;
+        top: 230px;
+        left: 373px;
+
+        font-family: "Spoqa Han Sans Neo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+        z-index: 300;
+      }
+
+      img {
+        width: 486px;
+        height: 280px;
+        object-fit: cover;
+
+        border-radius: 20px;
+        z-index: 100;
+      }
+
+      .overlay {
+        position: absolute;
+        width: 486px;
+        height: 280px;
+
+        background: rgba(18, 19, 20, 0.8);
+        border-radius: 20px;
+        z-index: 200;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="a">
+        <h1>
+          위니브에서<br />
+          <strong>
+            함께 콘텐츠 제작하실<br />
+            분을 모십니다.
+          </strong>
+        </h1>
+        <h2>
+          <strong>위니브</strong>는 ICT 연구 및 (코딩)교육 기관이며<br />
+          다양한 사회 공헌 활동을 하고 있습니다.
+        </h2>
+      </div>
+      <div class="b">
+        <img src="img/notebook.jpg" alt="이미지1" />
+        <h3>IT 교육 영상 콘텐츠</h3>
+        <p>바로가기</p>
+        <div class="overlay"></div>
+      </div>
+      <div class="c">
+        <img src="img/book.jpg" alt="이미지2" />
+        <h3>IT 서적</h3>
+        <p>바로가기</p>
+        <div class="overlay"></div>
+      </div>
+    </div>
+  </body>
+</html>
